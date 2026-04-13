@@ -1,0 +1,15 @@
+f1 = float(input("Primeira força: "))
+f2 = float(input("Segunda força: "))
+f3 = float(input("Terceira força: "))
+
+if f1 + f2 > f3 and f1 + f3 > f2 and f2 + f3 > f1:
+    print("Há equilíbrio.")
+
+    if f1 == f2 == f3:
+        print("Simétrico")
+    elif f1 == f2 or f1 == f3 or f2 == f3:
+        print("Parcialmente simétrico")
+    else:
+        print("Assimétrico")
+else:
+    print("Não há equilíbrio.")
