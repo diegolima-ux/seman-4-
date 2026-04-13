@@ -1,0 +1,14 @@
+nome = input("Nome do treinador: ")
+salario = float(input("Salário atual: "))
+tempo = int(input("Tempo de serviço (anos): "))
+
+if tempo >= 5 and salario <= 2000:
+    aumento = salario * 0.10
+else:
+    aumento = salario * 0.05
+
+novo_salario = salario + aumento
+
+print("Nome:", nome)
+print("Aumento: R$", aumento)
+print("Novo salário: R$", novo_salario)
