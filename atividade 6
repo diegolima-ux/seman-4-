@@ -1,0 +1,27 @@
+contador = 0
+
+p1 = input("Treinou regularmente? (Sim/Não): ")
+p2 = input("Fez treinos acima de 10km? (Sim/Não): ")
+p3 = input("Seguiu dieta especial? (Sim/Não): ")
+p4 = input("Competiu este ano? (Sim/Não): ")
+p5 = input("Tem acompanhamento de treinador? (Sim/Não): ")
+
+if p1.lower() == "sim":
+    contador += 1
+if p2.lower() == "sim":
+    contador += 1
+if p3.lower() == "sim":
+    contador += 1
+if p4.lower() == "sim":
+    contador += 1
+if p5.lower() == "sim":
+    contador += 1
+
+if contador == 5:
+    print("Atleta de Elite")
+elif contador >= 3:
+    print("Atleta Competitivo")
+elif contador == 2:
+    print("Participante Casual")
+else:
+    print("Não Preparado")
